@@ -1,4 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lifecycle and User Management GUI
+
+GUI for the mF2C Lifecycle and User Management components.
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![version](https://img.shields.io/badge/version-1.0.1-blue.svg)]()
+
+&copy; Atos Spain S.A. 2017
+
+The Lifecycle and User Management GUI is a component of the European Project [mF2C](https://www.mf2c-project.eu/).
+
+
+-----------------------
+
+[Description](#description)
+
+[Installation Guide](#installation-guide)
+
+[Usage Guide](#usage-guide)
+
+[Available Scripts](#available-scripts)
+
+[Credits](#credits)
+
+[LICENSE](#license)
+
+-----------------------
+
+
+## Description
+
+....
+
+
 
 ## Available Scripts
 
@@ -27,48 +60,15 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-
 ```
 npm install -g serve
 serve -s build
 ```
 
-### `npm run eject`
+## Credits
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### LICENSE
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The Lifecycle application is licensed under [Apache License, version 2](LICENSE.TXT).
