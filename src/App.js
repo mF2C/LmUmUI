@@ -24,11 +24,14 @@ class App extends Component {
     super(props, context);
 
     //Setting up global variables
-    global.rest_api_lm = 'http://lm-um:46000/api/v2/lm/';
-    global.rest_api_um = 'http://lm-um:46300/api/v2/um/';
-    global.const_rest_api_lm = 'http://lm-um:46000/api/v2/lm/';
-    global.const_rest_api_um = 'http://lm-um:46300/api/v2/um/';
+    global.rest_api_lm = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46000/api/v2/lm/";
+    global.rest_api_um = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46300/api/v2/um/";
+    global.const_rest_api_lm = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46000/api/v2/lm/";
+    global.const_rest_api_um = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46300/api/v2/um/";
     global.debug = true;
+
+    console.log('Getting global.const_rest_api_um ... ');
+    console.log(global.const_rest_api_um);
   }
 
 

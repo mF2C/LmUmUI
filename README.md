@@ -3,7 +3,7 @@
 GUI for the mF2C Lifecycle and User Management components.
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![version](https://img.shields.io/badge/version-1.0.1-blue.svg)]()
+[![version](https://img.shields.io/badge/version-1.0.2-blue.svg)]()
 
 &copy; Atos Spain S.A. 2017
 
