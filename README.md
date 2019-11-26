@@ -3,7 +3,7 @@
 GUI for the mF2C Lifecycle and User Management components.
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![version](https://img.shields.io/badge/version-1.0.2-blue.svg)]()
+[![version](https://img.shields.io/badge/version-1.0.3-blue.svg)]()
 
 &copy; Atos Spain S.A. 2017
 
@@ -29,9 +29,24 @@ The Lifecycle and User Management GUI is a component of the European Project [mF
 
 ## Description
 
+The Lifecycle and User Management GUI offers a user interface to mmanage service instances and agent's user settings.
+
+
+## Installation Guide
+
+- Clone repository
+- `npm run build`
+- Fix files and paths:
+  - move `build/static` folder files to `build/vendor` folder
+  - fix paths in `build` files: `index.html` and `precache-manifest.xxxx.js` (`static` -> `vendor`)
+- Build docker image:
+	- `docker build -t lm-um-gui .`
+- Launch `gui`:
+	- `docker run -p 8001:8001 -e MF2CAGENT_IP="http:\/\/10.0.2.15:46300" --rm lm-um-gui`
+
+## Usage Guide
+
 ....
-
-
 
 ## Available Scripts
 
