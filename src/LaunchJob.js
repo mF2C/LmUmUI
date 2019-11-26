@@ -166,12 +166,12 @@ class LaunchJob extends Component {
                 }
 
                 if (element['service_type'] == "compss") {
-                  nodes2.add({id: element['id'], label: element['id'].substring(17), image: './img/apps_compss_mini.png', shape: 'circularImage',
+                  nodes2.add({id: element['id'], label: element['id'].substring(17), image: 'img/apps_compss_mini.png', shape: 'circularImage',
                               font: {size:11, multi: true, color: ncolor}, level: 1});
                   edges2.add({from: 'ag_1', to: element['id'], color:{color:ncolor}, dashes: true});
                   total_compss_services++;
                 } else {
-                  nodes2.add({id: element['id'], label: element['id'], image: './img/apps_mini_disabled.png', shape: 'image',
+                  nodes2.add({id: element['id'], label: element['id'], image: 'img/apps_mini_disabled.png', shape: 'image',
                               font: {size:11, multi: true, color:"gray"}, level: 1});
                   edges2.add({from: 'ag_1', to: element['id'], color:{color:"gray"}, dashes: true});
                 }

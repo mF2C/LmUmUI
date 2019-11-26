@@ -24,14 +24,33 @@ class App extends Component {
     super(props, context);
 
     //Setting up global variables
-    global.rest_api_lm = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46000/api/v2/lm/";
-    global.rest_api_um = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46300/api/v2/um/";
-    global.const_rest_api_lm = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46000/api/v2/lm/";
-    global.const_rest_api_um = "http://" + process.env.REACT_APP_MF2C_HOST_IP + ":46300/api/v2/um/";
+    //window.MF2CAGENT_IP=undefined;
+
+    //global.rest_api_lm = "http://" + process.env.MF2C_HOST_IP + ":46000/api/v2/lm/";
+    //global.rest_api_um = "http://" + process.env.MF2C_HOST_IP + ":46300/api/v2/um/";
+    //global.const_rest_api_lm = "http://" + process.env.MF2C_HOST_IP + ":46000/api/v2/lm/";
+    //global.const_rest_api_um = "http://" + process.env.MF2C_HOST_IP + ":46300/api/v2/um/";
+
+    global.rest_api_lm = window.API_URL + "/api/v2/lm/";
+    global.rest_api_um = window.API_URL + "/api/v2/um/";
+    global.const_rest_api_lm = window.API_URL + "/api/v2/lm/";
+    global.const_rest_api_um = window.API_URL + "/api/v2/um/";
+
     global.debug = true;
+
+    //console.log('Getting window.MF2CAGENT_IP ... ');
+    //console.log(window.MF2CAGENT_IP);
+
+    //console.log('Getting window.API_URL ... ');
+    //console.log(window.API_URL);
+
+    //console.log('Getting window[API_URL] ... ');
+    //console.log(window['API_URL']);
 
     console.log('Getting global.const_rest_api_um ... ');
     console.log(global.const_rest_api_um);
+    console.log('Getting global.const_rest_api_lm ... ');
+    console.log(global.const_rest_api_lm);
   }
 
 
@@ -41,7 +60,7 @@ class App extends Component {
         <Navbar style={{background: "#777777"}} fixed="top">
           <Navbar.Brand href="/">
             <img
-              src="img/mf2c_logo_mini.png"
+              src="vendor/img/mf2c_logo_mini.png"
               width="45"
               height="25"
               className="d-inline-block align-top"
@@ -57,14 +76,6 @@ class App extends Component {
               </OverlayTrigger>
             </Nav.Item>
             <Nav.Item as="li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Item>
-            <Nav.Item as="li">
-              <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 400 }}
-                  overlay={<Tooltip><font color="lightyellow"><i>Launch new services in mF2C</i></font></Tooltip>}>
-                <Nav.Link style={{color: "#F5ECCE"}} href="#/launchservice">
-                  <i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;<b>Services</b>
-                </Nav.Link>
-              </OverlayTrigger>
-            </Nav.Item>
             <Nav.Item as="li">
               <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 400 }}
                   overlay={<Tooltip><font color="lightyellow"><i>Manage your service instances</i></font></Tooltip>}>
@@ -98,6 +109,7 @@ class App extends Component {
                 </Nav.Link>
               </OverlayTrigger>
             </Nav.Item>
+            <Nav.Item as="li">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Nav.Item>
             <Nav.Item as="li">
               <OverlayTrigger placement="bottom" delay={{ show: 250, hide: 400 }}
                   overlay={<Tooltip><font color="lightblue"><i>View / remove users from mF2C (admin)</i></font></Tooltip>}>
@@ -109,7 +121,7 @@ class App extends Component {
           </Nav>
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <font color="lightgray" size="1"><i>v1.0.1</i></font>
+              <font color="lightgray" size="1"><i>v1.0.3</i></font>
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar>

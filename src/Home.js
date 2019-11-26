@@ -50,10 +50,10 @@ class Home extends Component {
       <div style={{margin: "25px 0px 0px 0px"}}>
         <CardColumns>
           <Card bg="light" text="black" style={{ width: '19rem' }}>
-            <Card.Img variant="top" src="img/mf2c_logo.png" fluid />
+            <Card.Img variant="top" src="vendor/img/mf2c_logo.png" fluid />
             <Card.Body>
               <Card.Title>Lifecycle Manager</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted"><i>version 1.3.6</i></Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted"><i>version 1.3.9</i></Card.Subtitle>
               <Card.Text>
                 This module is responsible for managing the deployment and execution of applications in mF2C.
               </Card.Text>
@@ -64,10 +64,10 @@ class Home extends Component {
           </Card>
 
           <Card bg="dark" text="white" style={{ width: '19rem' }}>
-            <Card.Img variant="top" src="img/mf2c_logo.png" fluid />
+            <Card.Img variant="top" src="vendor/img/mf2c_logo.png" fluid />
             <Card.Body>
               <Card.Title>User Management module</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted"><i>version 1.3.6</i></Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted"><i>version 1.3.9</i></Card.Subtitle>
               <Card.Text>
                 The User Management module is responsible for managing the user’s profile and the definition of the device's resources that will be shared in mF2C. It also checks that the mF2C applications act according to these properties.
               </Card.Text>

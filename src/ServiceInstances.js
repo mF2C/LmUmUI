@@ -128,9 +128,9 @@ class ServiceInstances extends Component {
             ////////////////////////////////////////////////////////////////////////////
             if (body['service_instance'] != null && body['service_instance']['agents'] != null && body['service_instance']['agents'].length > 0) {
               // create an array with nodes
-              var app_icon = "./img/apps_mini.png";
+              var app_icon = "img/apps_mini.png";
               if (body['service_instance']['status'] == "started") {
-                app_icon = "./img/apps_started_mini.png";
+                app_icon = "img/apps_started_mini.png";
               }
 
               var nodes2 = new vis.DataSet([

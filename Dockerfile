@@ -4,8 +4,13 @@ WORKDIR /opt/lmui
 
 COPY package*.json ./
 COPY ./build .
-#/usr/share/nginx/html/lmui
 COPY ./nginx/nginx.conf /etc/nginx/conf.d
+COPY ./docker-entrypoint.sh .
+COPY ./generate_config_js.sh .
+
+RUN chmod +x ./docker-entrypoint.sh
+RUN chmod +x ./generate_config_js.sh
 
 EXPOSE 8001
-CMD ["nginx", "-g", "daemon off;"]
+
+CMD ["./docker-entrypoint.sh"]
