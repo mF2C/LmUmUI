@@ -26,10 +26,9 @@ The Lifecycle and User Management GUI is a component of the European Project [mF
 
 -----------------------
 
-
 ## Description
 
-The Lifecycle and User Management GUI offers a user interface to mmanage service instances and agent's user settings.
+The Lifecycle and User Management GUI application offers a user interface to mmanage service instances and the agent's resources shared by the user.
 
 
 ## Installation Guide
